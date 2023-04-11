@@ -7,6 +7,8 @@ import { CoffeeRatingModule } from './coffee-rating/coffee-rating.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
 import { CommonModule } from './common/common.module';
+import { UserModule } from './user/user.module';
+import { IamModule } from './iam/iam.module';
 import * as process from 'process';
 import * as Joi from '@hapi/joi';
 import appConfig from './config/app.config';
@@ -36,6 +38,8 @@ import appConfig from './config/app.config';
     CoffeeRatingModule,
     DatabaseModule,
     CommonModule,
+    UserModule,
+    IamModule,
   ],
   controllers: [AppController],
   providers: [AppService],
